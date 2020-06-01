@@ -16,6 +16,7 @@ public class BJ10809 {
 				break;
 			}
 			}
+			
 			if(no==0) {
 				System.out.print(-1+" ");
 			}
