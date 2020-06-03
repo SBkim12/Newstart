@@ -26,6 +26,7 @@ public class BJ1065 {
 			}
 		}
 		return (99+ans);
+		
 	}
 
 }
