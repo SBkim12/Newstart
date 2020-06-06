@@ -5,19 +5,25 @@ public class BJ2675 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		int n = sc.nextInt();
+		int test = sc.nextInt();
 		String pass = sc.nextLine();
-
-		for(int i=0; i<n; i++) {
-			String S = sc.nextLine();
-			String[] A= S.split(" ");
-			int a=Integer.parseInt(A[0]);
-			String[] ans =  A[1].split("");
-			for(int j=0; j<ans.length; j++) {
-				for(int e=0; e<a; e++) {
-					System.out.print(ans[j]);
+		String[] testcase = new String[test];
+		
+		for(int i=0; i<test; i++) {
+			testcase[i] = sc.nextLine();
+		}
+		
+		for(int i=0; i<test; i++) {
+			String[] a= testcase[i].split(" ");
+			int iterate = Integer.parseInt(a[0]);
+			String word = a[1];
+			String[] words = word.split("");
+			for(int j=0; j<words.length; j++) {
+				for(int e=0; e<iterate; e++) {
+					System.out.print(words[j]);
 				}
 			}
+			System.out.println();
 		}
 
 	}
