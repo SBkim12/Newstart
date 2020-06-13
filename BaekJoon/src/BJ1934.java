@@ -16,9 +16,10 @@ public class BJ1934 {
 
 			if(a[i]> b[i]){
 				int j=2;
+				int m= a[i];
 				while(b[i]>=j) {
-					if(b[i]%j==0 && a[i]%j==0) {
-						b[i]/=j;
+					if(b[i]%j==0 && m%j==0) {
+						b[i]/=j; m/=j;
 					}else {
 						j++;
 					}
@@ -28,9 +29,10 @@ public class BJ1934 {
 				ans[i]=a[i];
 			}else {
 				int j=2;
+				int m = b[i];
 				while(a[i]>=j) {
-					if(a[i]%j==0 && b[i]%j==0) {
-						a[i]/=j;
+					if(a[i]%j==0 && m%j==0) {
+						a[i]/=j; m/=j;
 					}else {
 						j++;
 					}
