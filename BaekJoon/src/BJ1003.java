@@ -13,6 +13,7 @@ public class BJ1003 {
 		int testCase = scan.nextInt();
 		dp[0] = 0;
 		dp[1] = 1;
+		System.out.println("го╠Б╫х╢ы");
 		
 		for(int i = 0; i < testCase; i++) {
 			int num = scan.nextInt();
